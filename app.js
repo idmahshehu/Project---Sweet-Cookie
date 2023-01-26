@@ -1,3 +1,14 @@
+const profilemenu = document.getElementById("profile-menu-wrap");
+console.log(profilemenu);
+
+const user_pic = document.getElementById("userpic");
+console.log(user_pic);
+
+user_pic.addEventListener("click", function () {
+  profilemenu.classList.toggle("active");
+});
+
+// -------comment-------
 const addcomment = document.getElementById("add_comment");
 const comment = document.querySelector('input[name="comment"]');
 const userpic = document.getElementById("userpic");
@@ -25,28 +36,23 @@ function addComment(event) {
 
     document.body.appendChild(div);
   }
-
 }
 addcomment.addEventListener("submit", addComment);
 
-
 //----change images------
-const changePicDesc = document.getElementById("side-img-list");
-console.log(changePicDesc);
-function changeImage(){
+let listimage = document.querySelectorAll(".side-img-list .side-img ");
+let listimg = document.querySelectorAll(".side-img-list .side-img");
+let mainimage = document.querySelector(" #img");
+let titleimg = document.querySelector(".open-image #p");
 
-    document.querySelectorAll(".side-img img").forEach(img => {
-    img.onclick = function() {
-        document.querySelector(".img").src = img.getAttribute("src");
-    }
-    });
-    document.querySelectorAll(".side-img-list .img-desc p").forEach(p => {
-        p.onclick = function() {
-            document.querySelector(".open-image p").textContent= p.getAttribute("title");
-        }
-    });
+listimage.forEach(function (image) {
+  image.onclick = function () {
+    let src = image.children[0].getAttribute("src");
+    mainimage.src = src;
+    console.log(mainimage);
+    console.log(src);
 
-
-}
-
-changePicDesc.addEventListener("click",changeImage);
+    let text = image.children[1].innerHTML;
+    titleimg.innerHTML = text;
+  };
+});

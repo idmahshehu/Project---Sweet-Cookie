@@ -10,8 +10,9 @@
   <body>
     <header>
       <div class="navbar-container">
-        <img src="./assets/images/YouTube-Logo.png" alt="YouTube-Logo" />
-
+        <a href="./WebApplication.html">
+          <img src="./assets/images/YouTube-Logo.png" alt="YouTube-Logo" />
+        </a>
         <div class="navbar">
           <div class="input">
             <input type="text" id="input" placeholder="Search" />
@@ -80,204 +81,115 @@
           id="guide-bar"
         />
       </div>
-      <!-- <div  class="side-bar_p" id="side-bar_p">
-            <a href="#" class="guide-items" id="guide-items">
-              <img src="./assets/images/home-icon.png" />
-              <p id="guide-items-p" class="guide-items-p">Home</p>
-            </a>
-            <a href="#" class="guide-items" id="guide-items">
-              <img src="./assets/images/shorts-icon.png" />
-              <p id="guide-items-p" class="guide-items-p">Shorts</p>
-            </a>
-            <a href="#" class="guide-items" id="guide-items">
-              <img src="./assets/images/subscription_icon.png" id="sub-img" />
-              <p id="guide-items-p" class="guide-items-p">Subscriptions</p>
-            </a>
-            <a href="#" class="guide-items" id="guide-items">
-              <img src="./assets/images/Library-icon.png" />
-              <p id="guide-items-p" class="guide-items-p">Library</p>
-            </a>
-          </div> -->
     </div>
-
-    <!-- <div class="all_img_desc">
-        <img
-          class="img"
-          src="https://i.ytimg.com/vi/G3e-cpL7ofc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeCRIPYMkDqa-58AscpsxUVLUc4w"
-          alt=""
-        /></a>
-        <div class="desc">    
-          <p>HTML & CSS Full Couse - Beginner to Pro</p>
-          <span>3M Views</span>
-          
-        </div></a>
-      </div> -->
 
     <div class="container img-container">
       <div class="row">
         <div class="open-image">
           <img
-            class="img"
+            id="img"
             src="https://i.ytimg.com/vi/G3e-cpL7ofc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeCRIPYMkDqa-58AscpsxUVLUc4w"
-            alt=""
+            alt="text"
           />
           <p id="p">HTML & CSS Full Couse - Beginner to Pro</p>
           <div class="title_desc">
             <div class="publisher">
-                <img src="./assets/images/cs-logo.jpg"  />
-                <div class="pic_title">    
-                  <p >Computer Science</p>
-                  <span>300K Subscribers</span>  
-                </div>
-                <button type="button">Subscribe</button>
+              <img src="./assets/images/cs-logo.jpg" />
+              <div class="pic_title">
+                <p>Computer Science</p>
+                <span>300K Subscribers</span>
+              </div>
+              <button type="button">Subscribe</button>
             </div>
-            <!-- <img src="./assets/images/cs-logo.jpg" alt="" /> -->
-            <!-- <span>3M Views - 10 months ago</span> -->
+
             <div>
-                <button id="btn"><img src="./assets/images/like-icon.png" > Like</button>
-                <button id="btn"><img src="./assets/images/dislike-icon.png" >Dislike</button>
-                <button id="btn"><img src="./assets/images/share-icon.png" >Share</button>
+              <button id="btn">
+                <img src="./assets/images/like-icon.png" /> Like
+              </button>
+              <button id="btn">
+                <img src="./assets/images/dislike-icon.png" />Dislike
+              </button>
+              <button id="btn">
+                <img src="./assets/images/share-icon.png" />Share
+              </button>
             </div>
-            
-            <!-- <p class="hidden">Watch Later</p> -->
           </div>
           <h5>50 Comments</h5>
           <form id="add_comment">
-          <div class="add_comment" >
-                <img src="./assets/images/user.png" id="userpic" >
-                <input type="text" placeholder="Add a comment..." name="comment"> 
-                                    
+            <div class="add_comment">
+              <img src="./assets/images/user.png" id="userpic" />
+              <input
+                type="text"
+                placeholder="Add a comment..."
+                name="comment"
+                id="comment"
+              />
             </div>
-            <button type="submit">Comment</button> 
-            </form>
-          
-          <!-- <div class="publisher">
-            <img src="./assets/images/cs-logo.jpg" alt="" />
-            <div>    
-              <p>Computer Science</p>
-              <span>300K Subscribers</span>  
-            </div>
-            <button type="button">Subscribe</button>
-            <div class="title_desc">
-                
-                    <button><img src="./assets/images/cs-logo.jpg" alt=""> like</button>
-                    <button><img src="./assets/images/cs-logo.jpg" alt="">like</button>
-                    <button><img src="./assets/images/cs-logo.jpg" alt="">like</button>
-                    <button><img src="./assets/images/cs-logo.jpg" alt="">like</button>
-                
-              </div>
-          </div> -->
-          
+            <button id="commentbtn">Comment</button>
+          </form>
         </div>
 
         <div class="right-sidebar">
           <div class="side-img-list" id="side-img-list">
-            <a  class="side-img"
-              ><img
-                src="https://i.ytimg.com/vi/CRGAmSOEdgE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDaQgF-HwtHJ4ChgEtn51cQevmVyw "
-            /></a>
-            <div class="img-desc">
-              <p >Inside a $29.000.000 Mid-Century Japanese House</p>
-              <span>1.3M Views</span>
+            <div class="side-img">
+              <img
+                src=" https://i.ytimg.com/vi/FldUWZPC7JA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCoBEAvOO4Fh-JCBFjvUePLfU88Qw"
+              />
+              <div class="img-desc">
+                <p>Inside a $165.000.000 Estate</p>
+                <span>1.2M Views</span>
+              </div>
             </div>
           </div>
           <div class="side-img-list">
-            <a  class="side-img"
-              ><img
-              src="./assets/Music/Music9.jpg"            /></a>
-            <div class="img-desc">
-                <p title="twenty one pilots - Stressed Out">twenty one pilots - Stressed Out</p>
+            <a class="side-img"
+              ><img src="./assets/Music/Music9.jpg" />
+              <div class="img-desc">
+                <p>twenty one pilots- StressedOut</p>
                 <span>2.6B Views</span>
-            </div>
+              </div></a
+            >
           </div>
           <div class="side-img-list">
-            <a  class="side-img"
+            <a class="side-img"
               ><img
-              src=" https://i.ytimg.com/vi/AHkxZ0C4XJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBnTJqFG4GigOEqk_Rqd2rMVwNAqA"
-            /></a>
-            <div class="img-desc">
+                src=" https://i.ytimg.com/vi/AHkxZ0C4XJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBnTJqFG4GigOEqk_Rqd2rMVwNAqA"
+              />
+              <div class="img-desc">
                 <p>Porto, Portugal(2022)</p>
                 <span>167K Views</span>
-            </div>
+              </div></a
+            >
           </div>
           <div class="side-img-list">
-            <a  class="side-img"
-              ><img
-              src="./assets/Music/Music8.jpg"            /></a>
-            <div class="img-desc">
-                <p>Taylor Swift - Midnight Rain</p>
+            <a class="side-img"
+              ><img src="./assets/Music/Music8.jpg" />
+              <div class="img-desc">
+                <p>Taylor Swift-Midnight Rain</p>
                 <span>69M Views</span>
-            </div>
+              </div></a
+            >
           </div>
           <div class="side-img-list">
-            <a  class="side-img"
+            <a class="side-img"
               ><img
-              src="https://i.ytimg.com/vi/jJRvm8jbyEY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBrc3KLfh9g4VV7RjHRU4XmIQHnIQ "
-            /></a>
-            <div class="img-desc">
+                src="https://i.ytimg.com/vi/jJRvm8jbyEY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBrc3KLfh9g4VV7RjHRU4XmIQHnIQ "
+              />
+              <div class="img-desc">
                 <p>Costa Rica Travel Documentary</p>
                 <span>3.2M Views</span>
-            </div>
+              </div></a
+            >
           </div>
           <div class="side-img-list">
-            <a  class="side-img"
-              ><img
-              src="./assets/Music/Music2.jpeg"            /></a>
-            <div class="img-desc">
-                <p>Lana Del Ray - Bord To Die</p>
+            <a class="side-img"
+              ><img src="./assets/Music/Music2.jpeg" />
+              <div class="img-desc">
+                <p>LanaDelRay-Bord To Die</p>
                 <span>60M Views</span>
-            </div>
+              </div></a
+            >
           </div>
-          <!-- <div class="side-img-list">
-            <a  class="side-img"
-              ><img
-              src="https://i.ytimg.com/vi/Mka4AjU4vrc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_3TKDsFMTLnmq_Z4rvgpZAw6Byw "
-              />
-            </a>
-            <div class="img-desc">
-                <p>Things to know before you visit Malta</p>
-              <span>308K Views</span>
-            </div>
-          </div> -->
-          <!-- <div class="side-img-list">
-            <a  class="side-img"
-              ><img
-              src="./assets/Music/Music3.jpg"            /></a>
-            <div class="img-desc">
-                <p>Harry Styles - Watermelon Sugar</p>
-              <span>327M Views</span>
-            </div>
-          </div> -->
-          <!-- <div class="side-img-list">
-            <a  class="side-img"
-              ><img
-              src="https://i.ytimg.com/vi/8mAITcNt710/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDX7GqfQska34QrgHS5-znGZGFAiA"
-              /></a>
-            <div class="img-desc">
-                <p>Harvard CS50 - Full Computer Science University Couse</p>
-              <span>2.5M Views</span>
-            </div>
-          </div>
-          <div class="side-img-list">
-            <a  class="side-img"
-              ><img
-              src=" https://i.ytimg.com/vi/FldUWZPC7JA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCoBEAvOO4Fh-JCBFjvUePLfU88Qw"
-              /></a>
-            <div class="img-desc">
-                <p>Inside a $165.000.000 Estate</p>
-              <span>1.2M Views</span>
-            </div>
-          </div>
-          <div class="side-img-list">
-            <a  class="side-img"
-              ><img
-              src="https://i.ytimg.com/vi/wbP6Wwu9PVk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAFc_6xjnIHugmgfG5QsZt8nVFeSw"
-              /></a>
-            <div class="img-desc">
-                <p>Day in the Life of Software Engineer</p>
-              <span>320K Views</span>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
